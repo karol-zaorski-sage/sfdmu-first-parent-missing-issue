@@ -1,0 +1,3 @@
+Name,IsPrivate,Description,StageName,Amount,Probability,TotalOpportunityQuantity,CloseDate,Type,NextStep,LeadSource,ForecastCategoryName,AccountId,CampaignId,Pricebook2Id,Errors,Id
+First,false,,Prospecting,,10,,2022-05-02,,,,Pipeline,,,,,0061X00000H8AxgQAF
+Second,false,,Prospecting,,10,,2022-05-19,,,,Pipeline,,,,,0061X00000H8AxhQAF

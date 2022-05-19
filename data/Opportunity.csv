@@ -1,0 +1,3 @@
+Name,IsPrivate,Description,StageName,Amount,Probability,TotalOpportunityQuantity,CloseDate,Type,NextStep,LeadSource,ForecastCategoryName,Account.Name,Campaign.Name,Pricebook2.Name
+First,false,,Prospecting,,10,,2022-05-02,,,,Pipeline,,,
+Second,false,,Prospecting,,10,,2022-05-19,,,,Pipeline,Sample Account for Entitlements,,
