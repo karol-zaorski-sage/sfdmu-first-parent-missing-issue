@@ -1,18 +1,26 @@
-# Salesforce DX Project: Next Steps
+# Missing lookup values for children records
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Prerequisite
 
-## How Do You Plan to Deploy Your Changes?
+- Account.csv with 1 record
+  - Name = "Sample Account for Entitlements"
+- Opportunity.csv with 2 records:
+  - first record - Account.Name = ""
+  - second record - Account.Name = "Sample Account for Entitlements"
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Steps
 
-## Configure Your Salesforce DX Project
+- run command `sfdx sfdmu:run --targetusername sfdmu --sourceusername csvfile -p data`
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Expected results
 
-## Read All About It
+- Records are upserted with the correct values
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Actuall results
+
+- Both Opportunities don't have Account relationshipo
+
+
+## Notes
+
+When the FIRST RECORD of the Opportunity.csv file has Account.Name = "Sample Account for Entitlements", than script is working correctly.
