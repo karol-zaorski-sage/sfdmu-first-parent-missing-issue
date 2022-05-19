@@ -1,0 +1,3 @@
+Description,Account.Name,SuppliedName,SuppliedEmail,SuppliedPhone,SuppliedCompany,Type,Status,Reason,Origin,Subject,Priority,IsEscalated,CurrencyIsoCode,SlaStartDate,Comments
+,,,,,,,,,,First,Low,false,,,
+,Sample Account for Entitlements,,,,,,,,,Second,Low,false,,,

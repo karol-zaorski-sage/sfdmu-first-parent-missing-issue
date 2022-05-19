@@ -1,0 +1,3 @@
+Date update,Child Id,Child Lookup Id Field,Child Lookup Reference Field,Child SObject,Parent SObject,Parent ExternalId Field,Missing expected parent ExternalID value
+2022-05-19  16:34:18.472,BPWTXFOCZFEO2SRHWR,ParentId,Parent.Id,Case,Case,Id,ID0000000000000002
+2022-05-19  16:34:18.473,PEIPSF0RPG4QHAMOLF,ParentId,Parent.Id,Case,Case,Id,ID0000000000000004

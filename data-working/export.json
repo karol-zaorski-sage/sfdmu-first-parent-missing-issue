@@ -1,0 +1,19 @@
+{
+    "objects": [
+        {
+            "query": "SELECT Name FROM Account",
+            "operation": "Upsert",
+            "deleteOldData" : true,
+            "externalId": "Name"
+        },
+        {
+            "query": "SELECT readonly_false FROM Case",
+            "operation": "Upsert",
+            "externalId": "Subject",
+            "deleteOldData" : true,
+            "excludedFields" : ["ContactId", "AssetId","EntitlementId", "BusinessHoursId", "ParentId", "EngineeringReqNumber__c","SLAViolation__c","Product__c","PotentialLiability__c","SLA_Level__c"]
+        }
+    ],
+    "excludeIdsFromCSVFiles" : true,
+    "promptOnIssuesInCSVFiles" : false
+}
